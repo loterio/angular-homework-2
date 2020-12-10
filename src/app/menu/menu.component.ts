@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input  } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+
+  @Input() title:string;
+  @Input() link1:string;
+  @Input() link2:string;
+  
+  @Input() ligado:boolean=false;
 
   constructor() { }
 

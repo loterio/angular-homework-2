@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,9 @@ import { MenuComponent } from './menu/menu.component';
 import { MainComponent } from './main/main.component';
 import { CardComponent } from './card/card.component';
 import { FooterComponent } from './footer/footer.component';
+import { ROUTES } from './app.routes';
+import { AboutComponent } from './about/about.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     MainComponent,
     CardComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(ROUTES),
   ],
   providers: [],
   bootstrap: [AppComponent]

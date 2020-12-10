@@ -9,3 +9,6 @@
 body {
     font-size: 62.5%;
 }
+.container {
+    padding: 0rem 4rem 4rem 4rem;
+}
