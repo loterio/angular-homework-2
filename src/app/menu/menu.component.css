@@ -6,22 +6,27 @@ nav {
 
 .menu {
     font-size: 2rem;
+
+    margin-left: .6rem;
 }
 
 .actions {
     display: flex;
     list-style: none;
+
+    margin-right: 2.2rem;
 }
 
 .actions .action {
     padding: .4rem .8rem .4rem .8rem;
-    margin-right: .6rem;
-
+    
+    margin-right: 1rem;
     text-decoration: none;
     border-radius: .2rem;
     background-color: rgb(231, 231, 231);
     transition: .14s;
 }
+
 .actions .action.disabled {
     background-color: rgb(204, 204, 204);
     color: rgb(119, 119, 119);

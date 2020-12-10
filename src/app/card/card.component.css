@@ -1,10 +1,10 @@
 .card {
     background-color: rgb(226, 226, 226);
 
-    height: 40vh;
-    width: 20vw;
+    min-height: 40vh;
+    width: 18.072vw;
 
-    margin: 2rem 1.4rem 2rem 0rem;
+    margin: 0.7rem;
     padding: 1rem;
 
     border-radius: .3rem;

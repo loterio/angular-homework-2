@@ -16,17 +16,26 @@ header {
 }
 .logo {
     height: 7vh;
-    width: 12vw;
+    min-width: 12vw;
 
-    margin-left: 4rem;
+    margin-left: 4.5rem;
     padding: 0rem 0rem 0rem .4rem;
 
     border-radius: .2rem;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     
-    color: white;
     font-size: 1.2rem;
     font-weight: 400;
+}
+.logo img {
+    height: 6vh;
+    padding-top: .2rem;
+}
+.title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #424242;
+    padding-right: .4rem;
 }
 ul {
     display: flex;
@@ -34,7 +43,7 @@ ul {
 
     align-items: center;
 
-    margin-right: 4rem;
+    margin-right: 6.8rem;
 }
 li {
     margin-left: .5rem;
