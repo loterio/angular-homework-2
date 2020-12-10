@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    font-size: 2rem;
+}
+
+.actions {
+    display: flex;
+    list-style: none;
+}
+
+.actions .action {
+    padding: .4rem .8rem .4rem .8rem;
+    margin-right: .6rem;
+
+    text-decoration: none;
+    border-radius: .2rem;
+    background-color: rgb(231, 231, 231);
+    transition: .14s;
+}
+.actions .action.disabled {
+    background-color: rgb(204, 204, 204);
+    color: rgb(119, 119, 119);
+
+    pointer-events: none;
+}
+
+
+.actions .action:hover {
+    background-color: rgb(204, 204, 204);
+}

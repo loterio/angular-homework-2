@@ -144,6 +144,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-homework-nd"
+    }
+  },
+  "defaultProject": "angular-homework-nd",
+  "cli": {
+    "analytics": "7455ffef-3e93-487f-9535-0b9288f107b2"
+  }
 }

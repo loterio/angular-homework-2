@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 87vh;
+}
+
+.container {
+    padding: 2rem 4rem 4rem 4rem;
+}
+h1 {
+    font-size: 42px;
+}
+
+.cards {
+    display: flex;
+}

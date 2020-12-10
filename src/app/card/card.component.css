@@ -1,0 +1,26 @@
+.card {
+    background-color: rgb(226, 226, 226);
+
+    height: 40vh;
+    width: 20vw;
+
+    margin: 2rem 1.4rem 2rem 0rem;
+    padding: 1rem;
+
+    border-radius: .3rem;
+
+    transition: .34s;
+}
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35);
+}
+.card-head {
+    font-size: 2rem;
+    color: #424242;
+    font-weight: 600;
+
+    padding-bottom: .4rem;
+}
+.card-body {
+    color: #757575;
+}
