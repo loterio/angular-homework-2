@@ -47,4 +47,24 @@ export class AppComponent implements OnInit {
     );
   }
 
+  addCar(f) {
+    this.error = '';
+    this.sucess = '';
+
+    this.CarService.store(this.car)
+      .subscribe(
+        (res: Cars[]) => {
+          // update the list of cars
+          this.cars = res;
+
+          // informs the user
+          this.sucess = "Created succesfuly";
+
+          // reset form
+          f.reset();
+        },
+        (err) => this.error = err
+      );
+  }
+
 }
