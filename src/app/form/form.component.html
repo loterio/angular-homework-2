@@ -71,11 +71,11 @@
                 #carModel="ngModel"
                 required
                 pattern="^[0-9]*$">
-            <span class="help-block danger" *ngIf="carPrice.errors?.required && carPrices.touched">
-                ID required
+            <span class="help-block danger" *ngIf="carPrice.errors?.required && carPrice.touched">
+                price required
             </span>
-            <span class="help-block danger" *ngIf="carPrice.errors?.pattern && carPrices.touched">
-                ID just contain numbers
+            <span class="help-block danger" *ngIf="carPrice.errors?.pattern && carPrice.touched">
+                price just contain numbers
             </span>
         </div>
 
