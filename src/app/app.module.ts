@@ -12,6 +12,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ROUTES } from './app.routes';
 import { AboutComponent } from './about/about.component';
 import { HelpComponent } from './help/help.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +25,13 @@ import { HelpComponent } from './help/help.component';
     CardComponent,
     FooterComponent,
     AboutComponent,
-    HelpComponent
+    HelpComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot(ROUTES),
   ],

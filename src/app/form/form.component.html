@@ -1,0 +1,26 @@
+<div id="theForm2">
+    <div *ngIf="search == 'ok'">Veículo procurado: {{car2.model}}</div>
+    <h2>One car</h2>
+    <form ng="ngForm" name="theForm2" (submit)="getCar(g)">
+        <div class="form-group">
+            <label for="">IDs</label>
+            <input type="text"
+                class="form-control"
+                name="id"
+                [(ngModel)]="car2.id"
+                #carModels="ngModel"
+                required
+                pattern="^[0-9]*$">
+            <span class="help-block danger" *ngIf="carModels.errors?.required && carModels.touched">
+                ID required
+            </span>
+            <span class="help-block danger" *ngIf="carModels.errors?.pattern && carModels.touched">
+                ID just contain numbers
+            </span>
+        </div>
+        <button 
+            class="btn btn-primary btn-sm"    
+            [disabled]="g.invalid">Search
+        </button>
+    </form>
+</div>

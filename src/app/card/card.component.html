@@ -1,8 +1,15 @@
 <div class="card">
+    <div *ngIf="error">{{error}}</div>
+    <div *ngIf="sucess">{{sucess}}</div>
+    <div *ngIf="search == 'ok'">Veículo procurado: {{car2.model}}</div>
+
     <div class="card-head">
         <span>{{title}}</span>
     </div>
-    <div class="card-body">
+    <div class="card-body" id="theList">
         <p [innerHTML]="msg"></p>
+        <ul>
+            <li *ngFor="let item of cars">{{item.model}} | {{item.price}}</li>
+        </ul>
     </div>
 </div>
